@@ -1,0 +1,50 @@
+.tos-container {
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.tos-content {
+    max-width: 1250px;
+}
+
+.date {
+    text-align: end;
+    font-weight: lighter;
+}
+
+.tos-title {
+    text-align: center;
+    font-size: 3em;
+}
+
+.tos-container h2 {
+    font-size: 2em;
+}
+
+.tos-container p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+@media (max-width: 792px) {
+    .tos-container {
+        margin: 100px 30px 40px 30px;
+    }
+
+    .tos-title {
+        font-size: 2.3em;
+        text-wrap: nowrap;
+    }
+
+    .tos-container h2 {
+        font-size: 1.7em;
+    }
+
+    .tos-container p {
+        font-size: 0.9em;
+    }
+}

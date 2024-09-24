@@ -40,13 +40,14 @@
     font-size: 1em;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-right: 15px;
 }
 
 .discord-button:hover {
     background-color: #5a52db;
+    transform: scale(1.05);
 }
 
 .about-image img {
@@ -56,11 +57,70 @@
     max-height: 300px;
 }
 
+/* General styling for Features */
+#features {
+    background-color: #121212; /* Dark background for the section */
+    padding: 50px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.feature-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1300px;
+}
+
+.feature-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-text {
+    width: 50%;
+    text-align: left;
+}
+
+.feature-text h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.feature-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.feature-video {
+    width: 35%;
+    min-width: 280px;
+}
+
+.feature-video video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
 /* Responsive About Section */
 @media (max-width: 792px) {
     .about {
-        padding: auto 10px;
+        padding: 50px 10px 0 10px;
     }
+
     .about-container {
         flex-direction: column;
         text-align: center;
@@ -86,6 +146,33 @@
     .about-image img {
         max-height: 250px;
     }
+
+    .section-title {
+        font-size: 2.5em;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-container.reverse {
+        flex-direction: column;
+    }
+
+    .feature-text,
+    .feature-video {
+        width: 100%;
+    }
+
+    .feature-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .feature-video {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -100,5 +187,9 @@
     .discord-button {
         padding: 10px 20px;
         font-size: 0.9em;
+    }
+
+    .feature-video video {
+        width: 100%;
     }
 }

@@ -4,26 +4,130 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>One Piece RPG</title>
+
+        <!-- Open Graph Meta Tags for Better SEO -->
+        <meta property="og:type" content="website" />
+        <meta name="og:url" content="https://smxtreme.github.io/One-Piece-RPG/" />
+        <meta name="og:title" content="One Piece RPG" />
+        <meta
+            name="og:description"
+            content="Embark on a journey across the seas in One Piece RPG! Learn and acquire the signature techniques of your favorite Straw Hat crew members and use them against your enemies."
+        />
+        <meta
+            name="og:image"
+            content="https://smxtreme.github.io/OPR/Assets/One%20Piece%20Logo.png"
+        />
+
+        <!-- Favicon for Branding -->
+        <link rel="icon" href="./Assets/One Piece Logo.png" type="image/x-icon" />
+
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="global.css" />
+        <link rel="stylesheet" href="./css/perks.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
     <body>
-        <!-- Navbar -->
-        <nav class="navbar">
-            <div class="navbar-container">
-                <img src="./Assets/one-piece-logo.png" alt="Logo" class="navbar-logo" />
-                <ul class="navbar-menu">
-                    <li><a href="./">Home</a></li>
-                    <li><a href="./perks.html">Perks</a></li>
-                    <li><a href="./guide.html">Guide</a></li>
-                    <li><a href="./tos.html">TOS</a></li>
-                    <li id="hide-in-small"><a href="./privacy-policy.html">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </nav>
+        <!-- Header with Navigation -->
+        <header>
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <img
+                        src="./Assets/one-piece-logo.png"
+                        alt="One Piece RPG Logo"
+                        class="navbar-logo"
+                    />
+                    <ul class="navbar-menu">
+                        <li><a href="./">Home</a></li>
+                        <li><a href="./perks.html">Perks</a></li>
+                        <li><a href="./guide.html">Guide</a></li>
+                        <li><a href="./tos.html">TOS</a></li>
+                        <li id="hide-in-small">
+                            <a href="./privacy-policy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="content">
+            <section class="perks-container">
+                <!-- Perk Card 1 -->
+                <div class="perk-card">
+                    <div class="perk-title ancient">Ancient DF User</div>
+                    <div class="perk-price">$2.00 USD / Per Month</div>
+                    <div class="perk-details">
+                        <p><strong>Details Of Perks</strong></p>
+                        <ul>
+                            <li>1.5x mission rewards</li>
+                            <li>Lowers cooldown by 30%</li>
+                            <li>Access to certain special moves</li>
+                            <li>Early access to new updates</li>
+                        </ul>
+                    </div>
+                    <p class="perk-note">
+                        For all boosts to be active, you must be in the official discord server of
+                        One Piece RPG <strong>"One Piece World"</strong>
+                    </p>
+                    <button class="upgrade-btn">Upgrade</button>
+                </div>
+
+                <!-- Perk Card 2 -->
+                <div class="perk-card">
+                    <div class="perk-title mythical">Mythical DF User</div>
+                    <div class="perk-price">$10.00 USD / Per Month</div>
+                    <div class="perk-details">
+                        <p><strong>Details Of Perks</strong></p>
+                        <ul>
+                            <li>2x mission rewards</li>
+                            <li>Lowers cooldown by 40%</li>
+                            <li>Access to all moves</li>
+                            <li>Increase base stamina to 15</li>
+                            <li>Double stats boosting from Baratie coupon</li>
+                            <li>Early access to new updates</li>
+                        </ul>
+                    </div>
+                    <p class="perk-note">
+                        For all boosts to be active, you must be in the official discord server of
+                        One Piece RPG <strong>"One Piece World"</strong>
+                    </p>
+                    <button class="upgrade-btn">Upgrade</button>
+                </div>
+
+                <!-- Perk Card 3 -->
+                <div class="perk-card">
+                    <div class="perk-title custom">Custom Move</div>
+                    <div class="perk-price">$10.00 USD / One Time</div>
+                    <div class="perk-details">
+                        <p><strong>Details Of Custom Move</strong></p>
+                        <ul>
+                            <li>Custom move name</li>
+                            <li>Custom description</li>
+                            <li>Custom attack type</li>
+                            <li>Custom GIF</li>
+                        </ul>
+                    </div>
+                    <p class="perk-note">
+                        To buy a custom move create a ticket in the official discord server of One
+                        Piece RPG <strong>"One Piece World"</strong>
+                    </p>
+                    <button class="upgrade-btn">Upgrade</button>
+                </div>
+            </section>
+        </main>
 
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2024 One Piece RPG. All rights reserved.<br />Made with love by SMXTREME</p>
+            <p>
+                &copy; 2024 One Piece RPG. All rights reserved.<br />
+                Made with ❤️ by <a href="#SXTREME">SMXTREME</a>
+            </p>
         </footer>
     </body>
 </html>

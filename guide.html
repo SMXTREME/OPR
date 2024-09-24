@@ -4,26 +4,104 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>One Piece RPG</title>
+
+        <!-- Open Graph Meta Tags for Better SEO -->
+        <meta property="og:type" content="website" />
+        <meta name="og:url" content="https://smxtreme.github.io/One-Piece-RPG/" />
+        <meta name="og:title" content="One Piece RPG" />
+        <meta
+            name="og:description"
+            content="Embark on a journey across the seas in One Piece RPG! Learn and acquire the signature techniques of your favorite Straw Hat crew members and use them against your enemies."
+        />
+        <meta
+            name="og:image"
+            content="https://smxtreme.github.io/OPR/Assets/One%20Piece%20Logo.png"
+        />
+
+        <!-- Favicon for Branding -->
+        <link rel="icon" href="./Assets/One Piece Logo.png" type="image/x-icon" />
+
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="global.css" />
+        <link rel="stylesheet" href="./css/guide.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
     <body>
-        <!-- Navbar -->
-        <nav class="navbar">
-            <div class="navbar-container">
-                <img src="./Assets/one-piece-logo.png" alt="Logo" class="navbar-logo" />
-                <ul class="navbar-menu">
-                    <li><a href="./">Home</a></li>
-                    <li><a href="./perks.html">Perks</a></li>
-                    <li><a href="./guide.html">Guide</a></li>
-                    <li><a href="./tos.html">TOS</a></li>
-                    <li id="hide-in-small"><a href="./privacy-policy.html">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </nav>
+        <!-- Header with Navigation -->
+        <header>
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <img
+                        src="./Assets/one-piece-logo.png"
+                        alt="One Piece RPG Logo"
+                        class="navbar-logo"
+                    />
+                    <ul class="navbar-menu">
+                        <li><a href="./">Home</a></li>
+                        <li><a href="./perks.html">Perks</a></li>
+                        <li><a href="./guide.html">Guide</a></li>
+                        <li><a href="./tos.html">TOS</a></li>
+                        <li id="hide-in-small">
+                            <a href="./privacy-policy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="content">
+            <section class="guide-section">
+                <h1>Guide For Beginners</h1>
+                <p>Select an option from the dropdown below to see its guide.</p>
+
+                <!-- Dropdown to select a command -->
+                <select id="command-select" class="command-dropdown">
+                    <option value="" disabled selected>Select a Command</option>
+                    <option value="command1">Command 1</option>
+                    <option value="command2">Command 2</option>
+                    <option value="command3">Command 3</option>
+                    <!-- Add more options for different commands here -->
+                </select>
+
+                <!-- Guide content that changes based on selection -->
+                <div id="command-guide" class="command-guide">
+                    <!-- Guide content will be dynamically displayed here -->
+                    <p>Please select a command to view its guide.</p>
+                </div>
+            </section>
+        </main>
+
+        <script>
+            const commandSelect = document.getElementById('command-select');
+            const commandGuide = document.getElementById('command-guide');
+
+            const guides = {
+                command1: `<h2>Guide for Command 1</h2><p>This is the guide for Command 1. Use this command to do XYZ.</p>`,
+                command2: `<h2>Guide for Command 2</h2><p>This is the guide for Command 2. Use this command to do ABC.</p>`,
+                command3: `<h2>Guide for Command 3</h2><p>This is the guide for Command 3. Use this command to perform DEF actions.</p>`,
+                // Add more guides as needed
+            };
+
+            commandSelect.addEventListener('change', (event) => {
+                const selectedCommand = event.target.value;
+                commandGuide.innerHTML =
+                    guides[selectedCommand] || '<p>Please select a command to view its guide.</p>';
+            });
+        </script>
 
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2024 One Piece RPG. All rights reserved.<br />Made with love by SMXTREME</p>
+            <p>
+                &copy; 2024 One Piece RPG. All rights reserved.<br />
+                Made with ❤️ by <a href="#SXTREME">SMXTREME</a>
+            </p>
         </footer>
     </body>
 </html>

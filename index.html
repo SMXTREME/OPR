@@ -4,6 +4,24 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>One Piece RPG</title>
+
+        <!-- Open Graph Meta Tags for Better SEO -->
+        <meta property="og:type" content="website" />
+        <meta name="og:url" content="https://smxtreme.github.io/One-Piece-RPG/" />
+        <meta name="og:title" content="One Piece RPG" />
+        <meta
+            name="og:description"
+            content="Embark on a journey across the seas in One Piece RPG! Learn and acquire the signature techniques of your favorite Straw Hat crew members and use them against your enemies."
+        />
+        <meta
+            name="og:image"
+            content="https://smxtreme.github.io/OPR/Assets/One%20Piece%20Logo.png"
+        />
+
+        <!-- Favicon for Branding -->
+        <link rel="icon" href="./Assets/One Piece Logo.png" type="image/x-icon" />
+
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="global.css" />
         <link rel="stylesheet" href="./css/index.css" />
 
@@ -16,19 +34,27 @@
         />
     </head>
     <body>
-        <!-- Navbar -->
-        <nav class="navbar">
-            <div class="navbar-container">
-                <img src="./Assets/one-piece-logo.png" alt="Logo" class="navbar-logo" />
-                <ul class="navbar-menu">
-                    <li><a href="./">Home</a></li>
-                    <li><a href="./perks.html">Perks</a></li>
-                    <li><a href="./guide.html">Guide</a></li>
-                    <li><a href="./tos.html">TOS</a></li>
-                    <li id="hide-in-small"><a href="./privacy-policy.html">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </nav>
+        <!-- Header with Navigation -->
+        <header>
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <img
+                        src="./Assets/one-piece-logo.png"
+                        alt="One Piece RPG Logo"
+                        class="navbar-logo"
+                    />
+                    <ul class="navbar-menu">
+                        <li><a href="./">Home</a></li>
+                        <li><a href="./perks.html">Perks</a></li>
+                        <li><a href="./guide.html">Guide</a></li>
+                        <li><a href="./tos.html">TOS</a></li>
+                        <li id="hide-in-small">
+                            <a href="./privacy-policy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
         <main class="content">
             <!-- About Section -->
@@ -38,29 +64,122 @@
                         <h1>About</h1>
                         <p>
                             Embark on a journey across the seas in One Piece RPG!<br />
-                            Learn and acquire the signature techniques<br />of your favorite Straw
-                            Hat crew members<br />
+                            Learn and acquire the signature techniques<br />
+                            of your favorite Straw Hat crew members<br />
                             and use them against your enemies.
                         </p>
                         <div class="about-button">
-                            <a href="https://discord.com" class="discord-button"
-                                ><i class="fa-brands fa-discord"></i> join Server</a
-                            >
+                            <a href="https://discord.com" class="discord-button">
+                                <i class="fa-brands fa-discord"></i> Join Server
+                            </a>
                             <a href="#idk" class="discord-button">Invite Bot</a>
                         </div>
                     </div>
                     <div class="about-image">
-                        <img src="./Assets/bots-logo.jpeg" alt="One Piece RPG Image" />
+                        <img
+                            src="./Assets/bots-logo.jpeg"
+                            alt="One Piece RPG Promotional Image"
+                            loading="lazy"
+                        />
                     </div>
                 </div>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features">
+                <h1 class="section-title">Features</h1>
+                <!-- Feature 1 -->
+                <article class="feature-container">
+                    <div class="feature-text">
+                        <h2>Leveling System</h2>
+                        <p>
+                            Unlock new abilities, conquer challenges, and become the ultimate pirate
+                            as you progress through our leveling system of the One Piece RPG Bot.
+                        </p>
+                    </div>
+                    <div class="feature-video">
+                        <video
+                            src="./Assets/leveling-system.mp4"
+                            alt="Leveling System Overview"
+                            autoplay
+                            muted
+                            loop
+                        ></video>
+                    </div>
+                </article>
+
+                <!-- Feature 2 -->
+                <article class="feature-container reverse">
+                    <div class="feature-text">
+                        <h2>70+ Moves</h2>
+                        <p>
+                            Unleash the power of over 70+ unique moves inspired by the legendary
+                            abilities of One Piece characters in the immersive One Piece RPG Bot
+                            experience.
+                        </p>
+                    </div>
+                    <div class="feature-video">
+                        <video
+                            src="./Assets/100-moves.mp4"
+                            alt="Moves Demonstration"
+                            autoplay
+                            muted
+                            loop
+                        ></video>
+                    </div>
+                </article>
+
+                <!-- Feature 3 -->
+                <article class="feature-container">
+                    <div class="feature-text">
+                        <h2>Missions</h2>
+                        <p>
+                            Dive into thrilling missions in East Blue, West Blue, South Blue, North
+                            Blue and many more coming soon, Missions are on various stuff ranging
+                            from finding treasure to defeating the Four Emperors of the Sea.
+                        </p>
+                    </div>
+                    <div class="feature-video">
+                        <video src="./Assets/missions.mp4" autoplay muted loop></video>
+                    </div>
+                </article>
+
+                <!-- Feature 4 -->
+                <article class="feature-container reverse">
+                    <div class="feature-text">
+                        <h2>PvP & PvE</h2>
+                        <p>
+                            Engage in intense PvP battles against fellow players or for challenging
+                            PvE missions, where you'll encounter formidable foes and epic fights.
+                        </p>
+                    </div>
+                    <div class="feature-video">
+                        <video src="./Assets/leveling-system.mp4" autoplay muted loop></video>
+                    </div>
+                </article>
+
+                <!-- Feature 5 -->
+                <article class="feature-container">
+                    <div class="feature-text">
+                        <h2>Leaderboard</h2>
+                        <p>
+                            Climb the ranks and compete for supremacy on the leaderboard, showcasing
+                            your prowess in battles and completing missions as you strive to become
+                            the strongest One Piece RPG player.
+                        </p>
+                    </div>
+                    <div class="feature-video">
+                        <video src="./Assets/leaderboard.mp4" autoplay muted loop></video>
+                    </div>
+                </article>
             </section>
         </main>
 
         <!-- Footer -->
         <footer class="footer">
             <p>
-                &copy; 2024 One Piece RPG. All rights reserved.<br />Made with love by
-                <a href="#SXTREME">SMXTREME</a>
+                &copy; 2024 One Piece RPG. All rights reserved.<br />
+                Made with ❤️ by <a href="#SXTREME">SMXTREME</a>
             </p>
         </footer>
     </body>

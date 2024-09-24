@@ -1,0 +1,128 @@
+/* Guide Section Styling */
+.guide-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    margin: 70px 0;
+}
+
+.guide-section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.command-guide {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+.command-guide h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.command-guide p {
+    margin: 0;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+/* Improved Dropdown Styling */
+.command-dropdown {
+    appearance: none; /* Remove the default appearance */
+    -webkit-appearance: none; /* Remove the default appearance for Safari */
+    -moz-appearance: none; /* Remove the default appearance for Firefox */
+    background-color: #2c2c2c; /* Keep the dark background */
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI1IiB2aWV3Qm94PSIwIDAgOCA1IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xIDBsMyA0IDMtNEgxeiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=='); /* Custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Position the arrow */
+    background-size: 8px 5px; /* Size of the arrow */
+    padding-right: 30px; /* Add space for the custom arrow */
+    border: 1px solid #575757; /* Border for dropdown */
+    border-radius: 8px;
+    color: #f5f5f5;
+    width: 100%;
+    padding: 12px; /* Slightly increased padding for a better feel */
+    font-size: 1em;
+    border-radius: 8px; /* More rounded edges for a modern look */
+    background-color: #2c2c2c; /* Darker background for better contrast */
+    color: #f5f5f5; /* Light text to stand out */
+    border: 1px solid #575757; /* Subtle border */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    outline: none; /* Remove the default outline */
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.command-dropdown:hover {
+    background-color: #3c3c3c; /* Slightly lighter background on hover */
+}
+
+.command-dropdown option {
+    background-color: #2c2c2c; /* Keep the background consistent */
+    color: #f5f5f5; /* Light text for options */
+    padding: 10px;
+}
+
+/* Styling for Selected Option */
+.command-dropdown option[selected] {
+    background-color: #0078d4; /* Highlight selected option in gold */
+    color: #121212; /* Dark text for contrast */
+}
+
+/* Responsive Design for Tablets and Smaller Screens */
+@media (max-width: 792px) {
+    .guide-section {
+        padding: 30px; /* Reduce padding for smaller screens */
+        margin: 70px 20px;
+    }
+
+    .guide-section h1 {
+        font-size: 1.8em; /* Adjust font size for smaller screens */
+    }
+
+    .command-dropdown {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .command-guide {
+        padding: 15px;
+    }
+
+    .command-guide h2 {
+        font-size: 1.4em; /* Adjust guide heading size */
+    }
+}
+
+@media (max-width: 480px) {
+    .guide-section {
+        padding: 15px; /* Minimal padding for mobile screens */
+    }
+
+    .guide-section h1 {
+        font-size: 1.6em; /* Adjust title size for mobile */
+    }
+
+    .command-dropdown {
+        padding: 8px;
+        font-size: 0.85em; /* Reduce font size for dropdown */
+    }
+
+    .command-guide {
+        padding: 10px; /* Minimal padding for mobile screens */
+    }
+
+    .command-guide h2 {
+        font-size: 1.2em; /* Smaller heading font size for mobile */
+    }
+
+    .command-guide p {
+        font-size: 0.9em; /* Reduce text size for readability on mobile */
+    }
+}

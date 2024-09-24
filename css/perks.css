@@ -1,0 +1,122 @@
+.perks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0 0 0;
+}
+
+/* Individual Perk Card */
+.perk-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for the card */
+    color: #ffffff; /* Light text for readability */
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 255px; /* Minimum width to ensure the cards are readable */
+    max-width: 375px; /* Set a maximum width to keep cards consistent */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow for card effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.perk-card:hover {
+    transform: translateY(-10px); /* Slightly lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhance the shadow effect on hover */
+}
+
+/* Perk Title Section */
+.perk-title {
+    padding: 15px;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Custom colors for each title */
+.perk-title.ancient {
+    background-color: #b22222; /* Dark red for Ancient DF User */
+}
+
+.perk-title.mythical {
+    background-color: #ff4500; /* Orange-red for Mythical DF User */
+}
+
+.perk-title.custom {
+    background-color: #32cd32; /* Green for Custom Move */
+}
+
+/* Perk Pricing */
+.perk-price {
+    background-color: rgba(147, 147, 147, 0.137); /* Transparent light background */
+    color: #ffffff; /* White text */
+    padding: 10px;
+    font-size: 1.6em;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.perk-details {
+    font-size: 1.3em;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.perk-details ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+}
+
+.perk-details ul li {
+    margin-bottom: 3px;
+}
+
+/* Perk Note */
+.perk-note {
+    font-size: 1em;
+    color: hsl(0, 0%, 100%); /* Slightly lighter text */
+    margin-bottom: 20px;
+}
+
+/* Upgrade Button */
+.upgrade-btn {
+    background-color: #ffffff; /* Light button background */
+    color: #121212; /* Dark text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upgrade-btn:hover {
+    background-color: #dddddd; /* Slightly darker on hover */
+}
+
+@media (max-width: 792px) {
+    .perk-card {
+        width: 70%;
+    }
+
+    .perk-title {
+        font-size: 1.8em;
+    }
+
+    .perk-price {
+        font-size: 1.2em;
+    }
+
+    .perk-details {
+        font-size: 1.1em;
+    }
+
+    .perk-details p {
+        font-size: 1.3em;
+    }
+
+    .perk-note {
+        font-size: 0.9em;
+    }
+}

@@ -22,7 +22,7 @@ body {
 /* Content wrapper to push footer down */
 .content {
     flex: 1;
-    padding: 100px 40px;
+    padding: 110px 40px 0 40px;
 }
 
 /* Navbar styles */
@@ -43,6 +43,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    max-width: 1500px;
 }
 
 .navbar-logo {
@@ -92,7 +93,7 @@ body {
 /* Media queries for smaller screens */
 @media (max-width: 792px) {
     .content {
-        padding: 110px 0;
+        padding: 110px 0 0 0;
     }
 
     .navbar {
