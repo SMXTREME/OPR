@@ -1,0 +1,61 @@
+/* Update Logs Section */
+.update-logs {
+    background: linear-gradient(135deg, #1b263b, #2c3e50); /* Dark navy blue gradient */
+    padding: 50px 20px;
+    margin: 40px auto; /* Center the section */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 1300px; /* Maximum width */
+    width: auto; /* Removed 100% to prevent touching the screen edge */
+}
+
+.update-logs h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #d4af37; /* Muted gold for titles */
+}
+
+.update-logs .log-entry {
+    background-color: #007b8c; /* Deep teal for log entry background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Softer shadow */
+}
+
+.update-logs .log-entry h3 {
+    color: #f3e9dc; /* Soft beige for headings */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.update-logs .log-entry p {
+    color: #f3e9dc; /* Same soft beige for body text */
+    font-size: 1rem;
+}
+
+.update-logs .log-entry .log-date {
+    font-size: 0.9rem;
+    color: #f3e9dc; /* Same beige for date */
+    text-align: right;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .update-logs {
+        padding: 30px 10px; /* Adjust padding for small screens */
+    }
+
+    .update-logs h2 {
+        font-size: 2rem;
+    }
+
+    .update-logs .log-entry h3 {
+        font-size: 1.3rem;
+    }
+
+    .update-logs .log-entry p {
+        font-size: 0.9rem;
+    }
+}
